@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="248910" started-at="2019-09-06T11:00:17Z" finished-at="2019-09-06T11:04:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="248910" started-at="2019-09-06T11:00:17Z" finished-at="2019-09-06T11:04:26Z">
+      <class name="com.MercuryAutoDemo.ConceptMaven">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="beforeSuite" is-config="true" duration-ms="32366" started-at="2019-09-06T10:59:45Z" finished-at="2019-09-06T11:00:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="beforeTest" is-config="true" duration-ms="8351" started-at="2019-09-06T11:00:17Z" finished-at="2019-09-06T11:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="beforeClass" is-config="true" duration-ms="1411" started-at="2019-09-06T11:00:26Z" finished-at="2019-09-06T11:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-09-06T11:00:27Z" finished-at="2019-09-06T11:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="Test()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="Test" duration-ms="238602" started-at="2019-09-06T11:00:27Z" finished-at="2019-09-06T11:04:26Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//img[@src='/images/masts/mast_flightfinder.gif']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRANALIPC', ip: '192.168.248.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//img[@src='/images/masts/mast_flightfinder.gif']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRANALIPC', ip: '192.168.248.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.MercuryAutoDemo.ConceptMaven.Test(ConceptMaven.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="afterMethod" is-config="true" duration-ms="193" started-at="2019-09-06T11:04:26Z" finished-at="2019-09-06T11:04:26Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRANALIPC', ip: '192.168.248.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 776720d6e964561d2ff221fa6d153025]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRANALIPC', ip: '192.168.248.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 776720d6e964561d2ff221fa6d153025
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.MercuryAutoDemo.ConceptMaven.afterMethod(ConceptMaven.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-09-06T11:04:26Z" finished-at="2019-09-06T11:04:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-09-06T11:04:26Z" finished-at="2019-09-06T11:04:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com.MercuryAutoDemo.ConceptMaven@7c75222b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-09-06T11:04:27Z" finished-at="2019-09-06T11:04:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.MercuryAutoDemo.ConceptMaven -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
